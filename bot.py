@@ -29,7 +29,7 @@ client = genai.Client(api_key=GEMINI_API_KEY)
 # Render Web Server
 # ==========================================
 
-web_app = Flask(name)
+web_app = Flask(__name__)
 
 
 @web_app.route("/")

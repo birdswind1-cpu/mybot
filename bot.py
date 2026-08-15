@@ -77,7 +77,7 @@ async def ai_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
             )
 
 
-if name == "main":
+if __name__ == "__main__":
     app = (
         ApplicationBuilder()
         .token(TELEGRAM_TOKEN)
